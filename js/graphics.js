@@ -9,17 +9,17 @@ var bezierImages = ["img/bezier/image-01.png",
                     "img/bezier/image-09.png"]
 
 var raytracerImages = ["img/raytracer/image-01.png",
-	                   "img/raytracer/image-02.png",
-	                   "img/raytracer/image-03.png",
-	                   "img/raytracer/image-04.png",
-	                   "img/raytracer/image-05.png",
-	                   "img/raytracer/image-06.png",
-	                   "img/raytracer/image-07.png",
-	                   "img/raytracer/image-08.png",
-	                   "img/raytracer/image-09.png",
-	                   "img/raytracer/image-10.png",
-	                   "img/raytracer/image-11.png",
-	                   "img/raytracer/image-12.png"]
+                       "img/raytracer/image-02.png",
+                       "img/raytracer/image-03.png",
+                       "img/raytracer/image-04.png",
+                       "img/raytracer/image-05.png",
+                       "img/raytracer/image-06.png",
+                       "img/raytracer/image-07.png",
+                       "img/raytracer/image-08.png",
+                       "img/raytracer/image-09.png",
+                       "img/raytracer/image-10.png",
+                       "img/raytracer/image-11.png",
+                       "img/raytracer/image-12.png"]
 
 function addImagesToGallery(images, gallery, altText) {
 	for (var image of images) {
@@ -40,7 +40,7 @@ function hideOverlay(fadeTime) {
 	$("#img-gallery-overlay").fadeOut(fadeTime);
 }
 
-function showOverlay() {
+function showOverlay(fadeTime) {
 	$("#img-gallery-overlay").fadeIn(fadeTime);
 }
 
@@ -56,5 +56,5 @@ $(".gallery-img").click(function() {
 });
 
 $("#img-gallery-overlay").click(function() {
-	hideOverlay(fadeTime)
+	hideOverlay(fadeTime);
 });

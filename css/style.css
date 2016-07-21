@@ -112,7 +112,7 @@ div#page-title {
 }
 
 #content {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	padding-bottom: 1em;
